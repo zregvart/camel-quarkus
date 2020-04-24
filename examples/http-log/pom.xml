@@ -18,18 +18,20 @@
 
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
+<!--    <parent>
         <groupId>org.apache.camel.quarkus</groupId>
         <artifactId>camel-quarkus-build-parent</artifactId>
         <version>1.1.0-SNAPSHOT</version>
         <relativePath>../../poms/build-parent/pom.xml</relativePath>
-    </parent>
+    </parent>-->
 
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>org.apache.camel.quarkus</groupId>
     <artifactId>camel-quarkus-examples-http-log</artifactId>
     <name>Camel Quarkus :: Examples :: HTTP Log</name>
     <description>Camel Quarkus Example :: HTTP to Log</description>
+    <version>1.1.0-SNAPSHOT</version>
 
     <properties>
         <!-- mvnd, a.k.a. Maven Daemon: https://github.com/gnodet/mvnd -->
@@ -45,40 +47,49 @@
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-resteasy</artifactId>
+            <version>1.4.0.CR1</version>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-kubernetes</artifactId>
+            <version>1.4.0.CR1</version>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-container-image-jib</artifactId>
+            <version>1.4.0.CR1</version>
         </dependency>
 
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-smallrye-health</artifactId>
+            <version>1.4.0.CR1</version>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-smallrye-metrics</artifactId>
+            <version>1.4.0.CR1</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-platform-http</artifactId>
+            <version>1.1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-log</artifactId>
+            <version>1.1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-microprofile-health</artifactId>
+            <version>1.1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-microprofile-metrics</artifactId>
+            <version>1.1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
@@ -87,6 +98,7 @@
             <plugin>
                 <groupId>io.quarkus</groupId>
                 <artifactId>quarkus-maven-plugin</artifactId>
+                <version>1.4.0.CR1</version>
                 <executions>
                     <execution>
                         <id>build</id>
